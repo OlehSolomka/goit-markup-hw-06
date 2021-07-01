@@ -386,7 +386,11 @@
     </footer>
     <div class="backdrop is-hidden" data-modal>
       <div class="modal">
-        
+        <button data-modal-close type="button" class="modal-button">
+          <svg class="icon-button">
+            <use href="img/icons.svg#icon-button"></use>
+          </svg>
+        </button>
         <p class="form-text">Оставьте свои данные, мы вам перезвоним</p>
        <form class="form">
           <div class="form-field">
@@ -425,24 +429,19 @@
           </div>
 
           <div class="form-policy">
-            <label class="form-label"><a href="#"> Условия договора</a> Соглашаюсь с рассылкой и принимаю  
-            <input type="checkbox" name="policy">
+            <label class="form-label">
+              <input type="checkbox" name="policy">
+              <a href="#"> Условия договора</a> Соглашаюсь с рассылкой и принимаю 
               <svg class="icon-checkbox">
                 <use href="img/icons.svg#icon-checkbox"></use>
                 <use href="img/icons.svg#icon-checkbox-check"></use>
               </svg>
             </label>
           </div>
-
-          <div class="button-thumb">
-            <button type="submit">Отправить</button>
-          </div>
        </form>
-        <button data-modal-close type="button" class="modal-button">
-          <svg class="icon-button">
-            <use href="img/icons.svg#icon-button"></use>
-          </svg>
-        </button>
+      <div class="button-thumb">
+        <button type="button">Отправить</button>
+      </div>
       </div>
     </div>
   <script src="./js/modal.js"></script>
